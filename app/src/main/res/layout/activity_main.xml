@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?colorPrimary"
+        app:titleTextColor="?colorOnPrimary">
+    <Spinner
+        android:id="@+id/filterS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin_top"
+        android:layout_marginHorizontal="@dimen/margin_horizontal"
+        android:background="?attr/colorSurface"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/nameET"
+        android:hint="@string/enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginHorizontal="@dimen/margin_horizontal" />
+    <EditText
+        android:id="@+id/last_nameET"
+        android:hint="@string/enter_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/small_margin_top"
+        android:layout_marginHorizontal="@dimen/margin_horizontal" />
+    <EditText
+        android:id="@+id/ageET"
+        android:hint="@string/enter_age"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin_top"
+        android:layout_marginHorizontal="@dimen/margin_horizontal" />
+    <Spinner
+        android:id="@+id/roleS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin_top"
+        android:layout_marginHorizontal="@dimen/margin_horizontal" />
+    <Button
+        android:id="@+id/saveBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/small_margin_top" />
+    <ListView
+        android:id="@+id/listLV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/small_margin_top"
+        android:layout_marginHorizontal="@dimen/margin_horizontal" />
+
+</LinearLayout>
